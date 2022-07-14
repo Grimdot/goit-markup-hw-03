@@ -1,0 +1,201 @@
+:root {
+	--accent-color: #2196f3;
+	--main-color: #212121;
+	--secondary-color: #757575;
+	--background-color: #ffffff;
+	--secondary-background-color: #f5f4fa;
+	--backgound-accent-color: #2f303a;
+	--contrast-text-color: #ffffff;
+	--footer-contacts: rgba(255, 255, 255, 0.6);
+}
+
+body {
+	font-size: 14px;
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 0.03em;
+	background-color: var(--background-color);
+	color: var(--main-color);
+}
+
+.list {
+	list-style: none;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/* logo styles */
+
+.logo {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	color: inherit;
+}
+
+.logo-accent {
+	color: var(--accent-color);
+}
+
+/* navigation styles */
+
+.active-link {
+	color: inherit;
+}
+
+.header-link {
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+}
+
+.auth-link {
+	color: var(--secondary-color);
+}
+
+.current,
+.active-link:hover,
+.active-link:focus {
+	color: var(--accent-color);
+}
+
+/* footer styles */
+
+.footer {
+	background-color: var(--backgound-accent-color);
+}
+
+.footer-adress,
+.footer-logo {
+	color: var(--contrast-text-color);
+}
+
+.adress,
+.contacts-link {
+	font-style: normal;
+	line-height: 1.71;
+	color: var(--footer-contacts);
+}
+
+/* hero styles */
+
+.hero {
+	background-color: var(--backgound-accent-color);
+}
+
+.hero-btn {
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	color: var(--contrast-text-color);
+	background-color: var(--accent-color);
+}
+
+/* studio styles */
+
+.team {
+	background-color: var(--secondary-background-color);
+}
+
+.team-title,
+.about-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+}
+
+.team-member,
+.team-profession {
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+}
+
+.team-member {
+	font-weight: 500;
+}
+
+.team-profession {
+	color: var(--secondary-color);
+}
+
+.benefits-title {
+	font-weight: 700;
+	font-size: inherit;
+	line-height: 1.14;
+	text-transform: uppercase;
+}
+
+.benefits-text {
+	line-height: 1.71;
+	color: var(--secondary-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+	color: inherit;
+	background-color: var(--secondary-background-color);
+	cursor: pointer;
+}
+
+.hero-title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--contrast-text-color);
+}
+
+/* filter button styles */
+
+.filter-btn {
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.63;
+	color: var(--main-color);
+	background-color: var(--secondary-background-color);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+	color: var(--contrast-text-color);
+	background-color: var(--accent-color);
+	cursor: pointer;
+}
+
+/* portfolio styles */
+
+.examples-title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+	color: var(--main-color);
+}
+
+.examples-type {
+	font-size: 16px;
+	line-height: 1.88;
+	color: var(--secondary-color);
+}
