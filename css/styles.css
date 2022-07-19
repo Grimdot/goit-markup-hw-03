@@ -29,6 +29,10 @@ ul {
 	margin: 0;
 }
 
+address {
+	font-style: normal;
+}
+
 .container {
 	width: 1200px;
 	margin: 0 auto;
@@ -65,7 +69,7 @@ ul {
 	overflow: hidden;
 }
 
-/* logo styles */
+/* ----------logo styles---------- */
 
 .logo {
 	font-family: "Raleway", sans-serif;
@@ -79,7 +83,7 @@ ul {
 	color: var(--accent-color);
 }
 
-/* navigation styles */
+/* ----------header styles---------- */
 
 .active-link {
 	color: inherit;
@@ -101,11 +105,16 @@ ul {
 	color: var(--accent-color);
 }
 
-/* footer styles */
+.header {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+/* ----------footer styles---------- */
 
 .footer {
 	background-color: var(--backgound-accent-color);
 	padding: 60px 0;
+	height: 252px;
 }
 
 .footer-logo {
@@ -119,9 +128,8 @@ ul {
 	color: var(--contrast-text-color);
 }
 
-.address {
+.footer-contacts {
 	text-align: left;
-	font-style: normal;
 	line-height: 1.71;
 	color: var(--footer-contacts);
 }
@@ -130,8 +138,7 @@ ul {
 	margin-bottom: 9px;
 }
 
-
-/* hero styles */
+/* ----------hero styles---------- */
 
 .hero {
 	text-align: center;
@@ -170,7 +177,7 @@ ul {
 	background-color: var(--accent-color);
 }
 
-/* studio styles */
+/* ----------studio styles---------- */
 
 .team-title,
 .about-title {
@@ -182,12 +189,28 @@ ul {
 	margin-bottom: 50px;
 }
 
-.employee {
+.member-photo {
 	margin-bottom: 30px;
 }
 
 .team {
 	background-color: var(--secondary-background-color);
+}
+
+.member-card {
+	background-color: var(--background-color);
+	width: 270px;
+	padding-bottom: 30px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+}
+
+.member-card:nth-child(-n + 3) {
+	margin-right: 30px;
+}
+
+.team-list {
+	display: flex;
 }
 
 .team-member,
@@ -216,6 +239,22 @@ ul {
 	padding-bottom: 94px;
 }
 
+.about-item:nth-child(-n + 2) {
+	margin-right: 30px;
+}
+
+.about-list {
+	display: flex;
+}
+
+.benefits-list {
+	display: flex;
+}
+
+.benefits-item:nth-child(-n + 3) {
+	margin-right: 30px;
+}
+
 .benefits-title {
 	font-weight: 700;
 	font-size: inherit;
@@ -228,6 +267,8 @@ ul {
 .benefits-text {
 	line-height: 1.71;
 	color: var(--secondary-color);
+
+	width: 270px;
 }
 
 .hero-btn:hover,
@@ -237,7 +278,7 @@ ul {
 	cursor: pointer;
 }
 
-/* portfolio styles */
+/* ----------portfolio styles---------- */
 
 .examples {
 	padding-top: 91px;
@@ -246,6 +287,12 @@ ul {
 
 .examples-img {
 	margin-bottom: 20px;
+}
+
+.examples-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
 }
 
 .examples-title {
@@ -266,10 +313,16 @@ ul {
 	color: var(--secondary-color);
 }
 
-/* filter button styles */
+/* ----------filter button styles---------- */
 
 .filter {
+	display: flex;
+	justify-content: center;
 	margin-bottom: 50px;
+}
+
+.filter-btn-item:nth-child(-n + 4) {
+	margin-right: 8px;
 }
 
 .filter-btn {
